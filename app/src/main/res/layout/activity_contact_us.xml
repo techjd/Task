@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/report_an_i"
+    tools:context=".ui.activity.ContactUsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/topLevelComp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/contactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Contact Us"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/topLevelComp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/fullNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Full Name"
+                android:textColor="#4F4F4F" />
+
+            <EditText
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#4F4F4F"
+                android:textSize="14dp"
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:textSize="14dp"
+
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Email"
+                android:textColor="#4F4F4F" />
+
+            <EditText
+                android:textColor="#4F4F4F"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:id="@+id/editTextEmailText"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:textSize="14dp"
+
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Message"
+                android:textColor="#4F4F4F" />
+
+            <EditText
+                android:textColor="#4F4F4F"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="53dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="SEND"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
